@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stock.manager.controllers.NewproductController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="300.0" prefWidth="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New Product">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="nameField" focusColor="#00acc1" labelFloat="true" promptText="Product Name">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="idField" focusColor="#00acc1" labelFloat="true" layoutX="10.0" layoutY="70.0" promptText="Product ID">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="priceField" focusColor="#00acc1" labelFloat="true" layoutX="10.0" layoutY="95.0" promptText="Price">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+               <children>
+                  <JFXButton fx:id="cancelBtn" onAction="#closeWindow" prefHeight="45.0" prefWidth="112.0" style="-fx-background-color: #00acc1;" text="Cancel" textFill="WHITE" />
+                  <JFXButton fx:id="saveBtn" layoutX="10.0" layoutY="10.0" onAction="#saveNewProduct" prefHeight="45.0" prefWidth="112.0" style="-fx-background-color: #00acc1;" text="Save" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
